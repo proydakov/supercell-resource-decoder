@@ -33,7 +33,7 @@ def decode_file(path):
         print("invalid input:", path)
 
 #
-# decode_file
+# Len_2_bytes
 #
 def len_2_bytes(datalen, max_len=4):
     data = []
@@ -45,6 +45,9 @@ def len_2_bytes(datalen, max_len=4):
         data.append(0)
     return data
 
+#
+# encode_file
+#
 def encode_file(path, max_len=4):
     basename = os.path.splitext(path)[0]
     encodedname = basename + ".encoded.csv"
